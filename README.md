@@ -72,4 +72,4 @@ The following example show how to enumerate various accounts belonging to 1passw
 pown whoarethey 1password
 ```
 
-![screenshot](https://media.githubusercontent.com/media/pownjs/pown-whoarethey/master/screenshots/01.png))
+![screenshot](https://media.githubusercontent.com/media/pownjs/pown-whoarethey/master/screenshots/01.png)
