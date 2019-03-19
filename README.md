@@ -51,3 +51,25 @@ You can also use the global pown to invoke the tool locally:
 ```sh
 $ POWN_ROOT=. pown whoarethey
 ```
+
+## Usage
+
+```
+pown whoarethey <accounts...>
+
+find social networking accounts and more
+
+Options:
+  --version  Show version number  [boolean]
+  --help     Show help  [boolean]
+```
+
+## Example
+
+The following example show how to enumerate various accounts belonging to 1password password manager:
+
+```
+pown whoarethey 1password
+```
+
+![screenshot](https://media.githubusercontent.com/media/pownjs/pown-whoarethey/master/screenshots/01.png))
