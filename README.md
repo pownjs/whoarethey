@@ -43,7 +43,7 @@ $ npm install @pown/whoarethey --save
 Once done, invoke pown cli:
 
 ```sh
-$ ./node_modules/.bin/pown-cli whoarethey
+$ POWN_ROOT=. ./node_modules/.bin/pown-cli whoarethey
 ```
 
 You can also use the global pown to invoke the tool locally:
