@@ -22,6 +22,7 @@ exports.yargs = {
         w.on('info', console.info)
         w.on('warn', console.warn)
         w.on('error', console.error)
+        w.on('debug', console.debug)
 
         for (const account of accounts) {
             const results = await w.fingerprint(account)
