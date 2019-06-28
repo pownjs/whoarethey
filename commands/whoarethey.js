@@ -6,7 +6,7 @@ exports.yargs = {
         concurrency: {
             describe: 'Number of concurrent requests',
             type: 'number',
-            default: 50,
+            default: 100,
             alias: 'c'
         }
     },
