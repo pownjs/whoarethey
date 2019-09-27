@@ -74,7 +74,7 @@
       },
       {
          "name" : "ask.fm",
-         "check_uri" : "http://ask.fm/{account}",
+         "check_uri" : "https://ask.fm/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "answers,",
          "account_missing_string" : "Page not found",
@@ -273,7 +273,18 @@
          "valid" : true
       },
       {
-         "name" : "Codeacademy",
+         "name" : "Chess.com",
+         "check_uri" : "https://www.chess.com/member/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Last Login",
+         "account_missing_string" : "<title>Missing Page?! - Chess.com</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "alice", "carol"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
+         "name" : "Codecademy",
          "check_uri" : "https://discuss.codecademy.com/u/{account}/summary",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>  Profile - ",
@@ -339,6 +350,17 @@
          "valid" : true
       },
       {
+         "name" : "Destructoid",
+         "check_uri" : "https://www.destructoid.com/?name={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Follow",
+         "account_missing_string" : "Error in query",
+         "account_missing_code" : "200",
+         "known_accounts" : ["john", "alice", "bob"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "DeviantArt",
          "check_uri" : "http://{account}.deviantart.com/",
          "account_existence_code" : "200",
@@ -354,8 +376,8 @@
          "check_uri" : "https://devrant.com/users/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Joined devRant on",
-         "account_missing_string" : "Feed",
-         "account_missing_code" : "302",
+         "account_missing_string" : "<!-- row start signup -->",
+         "account_missing_code" : "200",
          "known_accounts" : ["dfox", "trogus"],
          "category" : "social",
          "valid" : true
@@ -483,6 +505,17 @@
          "valid" : true
       },
       {
+         "name" : "F3",
+         "check_uri" : "https://f3.cool/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Send me anonymous messages or ask anything - F3",
+         "account_missing_string" : "Page Not Found - F3",
+         "account_missing_code" : "404",
+         "known_accounts" : ["nick"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "Facebook",
          "check_uri" : "https://www.facebook.com/{account}",
          "account_existence_code" : "200",
@@ -498,8 +531,8 @@
          "check_uri" : "http://www.fanpop.com/fans/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Fanpopping since",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
+         "account_missing_string" : "What are you a fan of?",
+         "account_missing_code" : "200",
          "known_accounts" : ["test","johndoe"],
          "category" : "movies",
          "valid" : true
@@ -614,6 +647,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["graciehughes_FOD"],
          "category" : "video",
+         "valid" : true
+      },
+      {
+         "name" : "Furiffic",
+         "check_uri" : "https://www.furiffic.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Registered Since",
+         "account_missing_string" : "<title>Whoops &middot; Furiffic</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["furiffic","test","admin"],
+         "category" : "XXX PORN XXX",
          "valid" : true
       },
       {
@@ -825,6 +869,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "images",
+         "valid" : true
+      },
+      {
+         "name" : "Inkbunny",
+         "check_uri" : "https://inkbunny.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Profile | Inkbunny, the Furry Art Community</title>",
+         "account_missing_string" : ">in random order<",
+         "account_missing_code" : "200",
+         "known_accounts" : ["Inkbunny","test"],
+         "category" : "XXX PORN XXX",
          "valid" : true
       },
       {
@@ -1727,6 +1782,17 @@
          "valid" : true
       },
       {
+         "name" : "Tik Tok",
+         "check_uri" : "https://www.tiktok.com/@{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " Following",
+         "account_missing_string" : "Couldn&#x27;t find this account",
+         "account_missing_code" : "200",
+         "known_accounts" : ["jennifer"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "Tinder",
          "check_uri" : "https://www.gotinder.com/@{account}",
          "account_existence_code" : "200",
@@ -1834,6 +1900,17 @@
          "account_missing_code" : "200",
          "known_accounts" : ["jet", "PoisonApple"],
          "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Venmo",
+         "check_uri" : "https://api.venmo.com/v1/users/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "\"data\":",
+         "account_missing_string" : "\"error\":",
+         "account_missing_code" : "400",
+         "known_accounts" : ["john", "doesnotexist"],
+         "category" : "finance",
          "valid" : true
       },
       {
