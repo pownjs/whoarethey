@@ -8,11 +8,18 @@ exports.yargs = {
             type: 'number',
             default: 100,
             alias: 'c'
+        },
+
+        categories: {
+            describe: 'Only use selected categories',
+            type: 'array',
+            default: [],
+            alias: 't'
         }
     },
 
     handler: async(argv) => {
-        const { concurrency, accounts } = argv
+        const { concurrency, categories, accounts } = argv
 
         const { WhoAreThey } = require('../lib/whoarethey')
 
@@ -25,7 +32,7 @@ exports.yargs = {
         w.on('debug', console.debug)
 
         for (const account of accounts) {
-            const results = await w.fingerprint(account)
+            const results = await w.fingerprint(account, { categories })
 
             console.table(results)
         }
