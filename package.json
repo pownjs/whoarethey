@@ -33,7 +33,7 @@
   },
   "pown": {
     "commands": [
-      "commands/whoarethey.js"
+      "commands/whoarethey/index.js"
     ]
   },
   "browserify": {
