@@ -4,8 +4,9 @@
   "description": "Pownage guaranteed",
   "main": "lib/index.js",
   "scripts": {
-    "whoarethey": "POWN_ROOT=. pown-cli whoarethey",
-    "test": "mocha"
+    "build": "scripts/update-whatsmyname-db.sh",
+    "test": "mocha",
+    "whoarethey": "POWN_ROOT=. pown-cli whoarethey"
   },
   "repository": {
     "type": "git",
