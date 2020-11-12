@@ -25,10 +25,10 @@
   "homepage": "https://github.com/pownjs/pown-whoarethey#readme",
   "dependencies": {
     "@pown/async": "^2.7.0",
-    "@pown/request": "^2.13.0"
+    "@pown/request": "^2.13.1"
   },
   "devDependencies": {
-    "@pown/cli": "^2.21.3",
+    "@pown/cli": "^2.24.0",
     "@pown/toolchain": "^2.0.0"
   },
   "pown": {
