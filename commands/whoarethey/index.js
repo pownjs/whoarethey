@@ -21,7 +21,7 @@ exports.yargs = {
     handler: async(argv) => {
         const { concurrency, categories, accounts } = argv
 
-        const { WhoAreThey } = require('../lib/whoarethey')
+        const { WhoAreThey } = require('../../lib/whoarethey')
 
         const w = new WhoAreThey({ maxConcurrent: concurrency })
 
