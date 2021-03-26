@@ -1,6 +1,8 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/pownjs.svg?logo=twitter)](https://twitter.com/pownjs)
 [![NPM](https://img.shields.io/npm/v/@pown/whoarethey.svg)](https://www.npmjs.com/package/@pown/whoarethey)
 [![Fury](https://img.shields.io/badge/version-2x%20Fury-red.svg)](https://github.com/pownjs/lobby)
+![default workflow](https://github.com/pownjs/nucleoid/actions/workflows/default.yaml/badge.svg)
+[![SecApps](https://img.shields.io/badge/credits-SecApps-black.svg)](https://secapps.com)
 
 # Pown WhoAreThey
 
@@ -55,13 +57,27 @@ $ POWN_ROOT=. pown whoarethey
 ## Usage
 
 ```
-pown whoarethey <accounts...>
+pown-cli whoarethey <accounts...>
 
 find social networking accounts and more
 
 Options:
-  --version  Show version number  [boolean]
-  --help     Show help  [boolean]
+  --version                                                 Show version number  [boolean]
+  --help                                                    Show help  [boolean]
+  --request-concurrency, -c                                 The number of requests to send at the same time  [number] [default: Infinity]
+  --method, -X                                              Custom method  [string]
+  --header, -H                                              Custom header  [string]
+  --connect-timeout, -t, --timeout                          Maximum time allowed for the connection to start  [number] [default: 30000]
+  --data-timeout, -T                                        Maximum time allowed for the data to arrive  [number] [default: 30000]
+  --accept-unauthorized, -k, --insecure                     Accept unauthorized TLS errors  [boolean] [default: false]
+  --filter-response-code, --response-code, --filter-status  Filter responses with code  [string] [default: ""]
+  --content-sniff-size, --content-sniff, --sniff-size       Specify the size of the content sniff  [number] [default: 5]
+  --print-response-body, --print-body                       Print response body  [boolean] [default: false]
+  --download-response-body, --download-body                 Download response body  [boolean] [default: false]
+  --proxy-url, --proxy                                      Setup proxy  [string] [default: ""]
+  --task-concurrency, -C                                    Number of concurrent requests  [number] [default: Infinity]
+  --categories                                              Only use selected categories  [array] [default: []]
+  --output-format                                           Output format for results  [string] [choices: "table", "json", "url"] [default: "table"]
 ```
 
 ## Example
