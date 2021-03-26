@@ -4,9 +4,10 @@
   "description": "Pownage guaranteed",
   "main": "lib/index.js",
   "scripts": {
+    "whoarethey": "POWN_ROOT=. pown-cli whoarethey",
+    "usage": "POWN_ROOT=. pown-cli whoarethey --help",
     "build": "scripts/update-whatsmyname-db.sh",
-    "test": "mocha",
-    "whoarethey": "POWN_ROOT=. pown-cli whoarethey"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,13 +24,17 @@
     "url": "https://github.com/pownjs/pown-whoarethey/issues"
   },
   "homepage": "https://github.com/pownjs/pown-whoarethey#readme",
-  "dependencies": {
-    "@pown/async": "^2.11.0",
-    "@pown/request": "^2.16.0"
+  "peerDependencies": {
+    "@pown/request": "^2.23.0"
   },
   "devDependencies": {
-    "@pown/cli": "^2.25.3",
-    "@pown/toolchain": "^2.0.0"
+    "@pown/cli": "^2.30.0",
+    "@pown/request": "^2.26.1",
+    "@pown/toolchain": "^2.1.0",
+    "proxy-agent": "^4.0.1"
+  },
+  "dependencies": {
+    "@pown/async": "^2.11.0"
   },
   "pown": {
     "commands": [

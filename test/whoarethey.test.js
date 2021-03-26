@@ -2,20 +2,20 @@ const assert = require('assert')
 const { Scheduler } = require('@pown/request/lib/scheduler')
 const { eachOfLimit } = require('@pown/async/lib/eachOfLimit')
 
-const db = require('../lib/db')
+const database = require('../lib/database')
 const { WhoAreThey } = require('../lib/whoarethey')
 
 describe('whatsmyname', () => {
-    describe('db', () => {
-        for (const site of db.sites) {
+    describe('database', () => {
+        for (const site of database.sites) {
             const { name, known_accounts = [], valid = false } = site
 
             if (!valid) {
                 continue
             }
 
-            it(`must checkout ${site.name}`, async() => {
-                const wt = new WhoAreThey()
+            it(`${site.name} validates`, async() => {
+                const wt = new WhoAreThey() // TODO: working
 
                 const generateRequests = function*() {
                     for (const account of known_accounts) {
