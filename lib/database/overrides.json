@@ -1,5 +1,10 @@
 {
     "Flipboard": {
         "valid": false
+    },
+    "GitHub": {
+        "check_headers": {
+            "user-agent": "curl"
+        }
     }
 }
