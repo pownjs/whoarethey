@@ -3,9 +3,7 @@
         "valid": false
     },
     "GitHub": {
-        "check_headers": {
-            "user-agent": "curl"
-        }
+        "valid": false
     },
     "DockerHub": {
         "valid": false
