@@ -18,9 +18,9 @@ exports.yargs = {
 
         'categories': {
             describe: 'Only use selected categories',
-            type: 'array',
-            default: [],
-            alias: []
+            type: 'string',
+            default: '',
+            alias: ['s']
         },
 
         'output-format': {
@@ -48,7 +48,7 @@ exports.yargs = {
 
         const wrt = new WhoAreThey({ database: require('../../lib/database'), concurrency: taskConcurrency, scheduler })
 
-        const results = await wrt.fingerprint(accounts, { categories })
+        const results = await wrt.fingerprint(accounts, { categories: categories.split(/[,\s]+/g).map(c => c.trim()).filter(c => c) })
 
         if (outputFormat === 'table') {
             console.table(results)
