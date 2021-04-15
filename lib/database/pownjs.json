@@ -16,7 +16,7 @@
          "comments": []
       },
       {
-         "name": "Docker Hub",
+         "name": "DockerHub User",
          "check_uri": "https://hub.docker.com/v2/users/{account}/",
          "check_headers": {},
          "pretty_uri": "https://hub.docker.com/u/{account}",
@@ -24,7 +24,21 @@
          "account_existence_string": "profile_url",
          "account_missing_string": "Not Found",
          "account_missing_code": "404",
-         "known_accounts": ["john"],
+         "known_accounts": ["pdparchitect"],
+         "category": "coding",
+         "valid": true,
+         "comments": []
+      },
+      {
+         "name": "DockerHub Org",
+         "check_uri": "https://hub.docker.com/v2/orgs/{account}/",
+         "check_headers": {},
+         "pretty_uri": "https://hub.docker.com/u/{account}",
+         "account_existence_code": "200",
+         "account_existence_string": "profile_url",
+         "account_missing_string": "Not Found",
+         "account_missing_code": "404",
+         "known_accounts": ["websecurify"],
          "category": "coding",
          "valid": true,
          "comments": []

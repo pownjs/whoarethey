@@ -6,5 +6,8 @@
         "check_headers": {
             "user-agent": "curl"
         }
+    },
+    "DockerHub": {
+        "valid": false
     }
 }
