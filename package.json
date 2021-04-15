@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "whoarethey": "POWN_ROOT=. pown-cli whoarethey",
+    "recon": "POWN_ROOT=. pown-cli recon",
     "usage": "POWN_ROOT=. pown-cli whoarethey --help",
     "build": "scripts/update-whatsmyname-db.sh",
     "test": "mocha"
@@ -29,7 +30,8 @@
   },
   "devDependencies": {
     "@pown/cli": "^2.30.0",
-    "@pown/request": "^2.26.1",
+    "@pown/recon": "^2.137.0",
+    "@pown/request": "^2.26.2",
     "@pown/toolchain": "^2.1.0",
     "proxy-agent": "^4.0.1"
   },
@@ -38,7 +40,10 @@
   },
   "pown": {
     "commands": [
-      "commands/whoarethey/index.js"
+      "commands/whoarethey"
+    ],
+    "transforms": [
+      "transforms/whoarethey"
     ]
   },
   "browserify": {
