@@ -29,14 +29,14 @@
     "@pown/request": "^2.23.0"
   },
   "devDependencies": {
-    "@pown/cli": "^2.33.0",
-    "@pown/recon": "^2.162.0",
+    "@pown/cli": "^2.34.0",
+    "@pown/recon": "^2.163.0",
     "@pown/request": "^2.26.2",
     "@pown/toolchain": "^2.5.0",
     "proxy-agent": "^4.0.1"
   },
   "dependencies": {
-    "@pown/async": "^2.13.3"
+    "@pown/async": "^2.14.0"
   },
   "pown": {
     "commands": [
