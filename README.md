@@ -76,7 +76,7 @@ Options:
   --download-response-body, --download-body                 Download response body  [boolean] [default: false]
   --proxy-url, --proxy                                      Setup proxy  [string] [default: ""]
   --task-concurrency, -C                                    Number of concurrent requests  [number] [default: Infinity]
-  --categories                                              Only use selected categories  [array] [default: []]
+  --categories, -s                                          Only use selected categories  [string] [default: ""]
   --output-format                                           Output format for results  [string] [choices: "table", "json", "url"] [default: "table"]
 ```
 
