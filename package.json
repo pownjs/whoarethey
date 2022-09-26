@@ -33,7 +33,7 @@
     "@pown/recon": "^2.163.0",
     "@pown/request": "^2.26.2",
     "@pown/toolchain": "^2.5.0",
-    "proxy-agent": "^4.0.1"
+    "proxy-agent": "^5.0.0"
   },
   "dependencies": {
     "@pown/async": "^2.14.0"
